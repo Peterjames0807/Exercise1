@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout << "Enter The 'A' alphabet" << endl;
+	char letter;
+
+	// declaring a string to check the size
+	string input = "";
+
+	// get what ever user inputs, whole line until new line to check the size length
+	getline(cin, input);
+
+	//if the size is not equals to one, basically more than one letter, it will show this error message
+	if (input.size() != 1)
+	{
+		cout << "You have entered more than one letter" << endl;
+	}
+	else
+	{
+		//converting the string into char because switch cannot accept any input except for int and char
+		letter = input.at(0);
+
+		switch (letter)
+		{
+		case 'a':
+		case 'A':
+			cout << "you have entered a letter\n";
+			break;
+		default:
+			cout << "you did not entered 'A' letter";
+		}
+
+	}
+}
