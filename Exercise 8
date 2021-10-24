@@ -1,0 +1,367 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	cout << "Kindly select the option number for the month you want to see the days of:\n";
+
+	cout << " 1. January\n 2. February\n 3. March\n 4. April\n 5. May \n 6. June \n 7. July \n 8. August\n 9. September\n 10. October\n 11. November\n 12. December\n";
+	int a;
+	cin >> a;
+
+
+	switch (a)
+	{
+	case 1:
+	{
+		cout << "The month of January have  days 31";
+		break;
+	}
+	case 2:
+	{
+		cout << "The month of February have  days 28 if there is a leap year than 29";
+		break;
+	}
+	case 3:
+	{
+		cout << "The month of March have  days 31";
+		break;
+	}
+	case 4:
+	{
+		cout << "The month of April have  days 30";
+		break;
+	}
+	case 5:
+	{
+		cout << "The month of May have  days 31";
+		break;
+	}
+	case 6:
+	{
+		cout << "The month of June have  days 30";
+		break;
+	}
+	case 7:
+	{
+		cout << "The month of July have  days 31";
+		break;
+	}
+	case 8:
+	{
+		cout << "The month of August have  days 31";
+		break;
+	}
+	case 9:
+	{
+		cout << "The month of September have  days 30 ";
+		break;
+	}
+	case 10:
+	{
+		cout << "The month of October have  days 31";
+		break;
+	}
+	case 11:
+	{
+		cout << "The month of November have  days 30";
+		break;
+	}
+	case 12:
+	{
+		cout << "The month of December have  days 31";
+		break;
+	}
+
+	default:
+	{
+		cout << "Invalid Input" << endl;
+		break;
+	}
+	}
+
+}
+// Switch Month
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+
+		cout << "Would you like to continue? (Y/N): "; 
+		char answer; 
+		cin >> answer; 
+
+			switch (answer)
+			{ 
+			
+			case 'Y':
+			case 'y':
+			{
+				cout << "You selected yes";
+				break;
+			}
+					
+			case 'N':
+			case 'n':
+			{
+				cout << "You selected no";
+				break;
+			}
+					
+			default: 
+			{
+				cout << "incorrect command";
+			}
+
+			}
+		cin.get(); //keeps console window open in Visual Studio
+		return 0;
+	}
+// Gameplay
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Kindly enter how many litres you want to fill up your car\n";
+    int lit;
+    cin >> lit;
+    if (lit != 0)
+    {
+        cout << "You have selected " << lit << " litres\n";
+        cout << "Kindly select the fuel type you want for your car\n";
+        cout << "Enter 'p' for Petrol\n 'd' for Diesel\n";
+        char fuel;
+        cin >> fuel;
+        switch (fuel)
+        {
+        case 'P':
+        case 'p':
+        {
+
+            cout << "You have selected Petrol for filling up your car\n "; 
+            int c;
+            c = lit * 0.8;
+            cout << "\nThe price per litres is 0.8 now the total is " << c;
+            break;
+        }
+        case 'd':
+        case 'D':
+        {
+            cout << "You have selected Diesel for filling up your car ";
+            int c;
+            c = lit * 0.5;
+            cout << "\nThe price per litres is 0.5 now the total is " << c;
+            break;
+
+            break;
+        }
+
+        default:
+        {
+            cout << "Incorrect command"; break;
+        }
+        }
+    }
+    else
+    {
+        cout << "Incorrect command\n ";
+    }
+    
+}
+// Fuel
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+
+	cout << "Kindly select what type of temperature conversion you're interested in" << endl;
+	cout << "Type 'c' for conversion from celcius into fahrenheit" << endl;
+	cout << "Type 'f' for conversion from fahrenheit into celcius" << endl;
+	
+	char select;
+	int temp;
+	cin >> select;
+	switch (select)
+	{
+		case 'c':
+		case 'C':
+
+	{
+		cout << "\nKindly enter the temperature in celcius to be converted into fahrenheit\n";
+		cin >> temp;
+		temp = (temp * 1.8) +32;
+		cout << "\n The temperature after converison is " << temp;
+		break;
+	}
+		case 'f':
+		case 'F':
+		{
+			cout << "\nKindly enter the temperature in fahrenheit to be converted into celcius\n";
+			cin >> temp;
+			temp = (temp - 32) * 0.5556;
+			cout << "\n The temperature after converison is " << temp;
+			break;
+		}
+		
+		default:
+	{
+		cout << "Incorrect command";
+		break;
+	}
+
+	}
+
+	
+	cin.get(); 
+	return 0;
+}
+// Switch Temp
+#include<iostream>
+using namespace std;
+int main()
+{
+	int side;
+	cout << "Enter the sides number to see the shape name (minimum 3 sides, maximum 10) \n";
+	cin >> side;
+	switch (side)
+	{
+	
+	case 1:
+	case 2:
+	{ cout << "The minimum side required is 3, you have entered less than the requirement" << endl; break; }
+	case 3:
+	{ cout << "Triangle  has " << side << " sides" << endl;
+		break;
+	}
+	case 4:
+	{ cout << "Square | Rectangle has " << side << " sides" << endl;
+		break;
+	}
+	case 5:
+	{cout << "Pentagon has " << side << " sides" << endl;
+		break;
+	}
+	case 6:
+	{ cout << "Hexagon has " << side << " sides" << endl;
+		break;
+	}
+	case 7:
+	{ cout << "Heptagon has " << side << " sides" << endl;
+		break;
+	}
+	case 8: 
+	{ cout << "Octagon has " << side << " sides" << endl;
+		break;
+	}
+	case 9:
+	{ cout << "Nonagon has " << side << " sides" << endl;
+		break;
+	}
+	case 10:
+	{ cout << "Decagon has " << side << " sides" << endl;
+		break;
+	}
+	default:
+	{
+		cout << "Incorrect command" << endl;
+		break;
+	}
+
+	}
+
+	
+}
+// Switch name that shape
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "What is the capital of France? Select the option from below\n";
+    cout << "\n Enter 'P' for Paris";
+    cout << "\n Enter 'D' for Dubai";
+    cout << "\n Enter 'N' if you don't know\n";
+    char capital;
+    cin >> capital;
+    switch (capital)
+    {
+    case 'P':
+    case 'p':
+    {
+        cout << "You're right, the capital of France is Paris" << endl;
+        break;
+    }
+    case 'd':
+    case 'D':
+    {
+        cout << "You're wrong, the capital of France is Paris not Dubai " << endl;
+        break;
+      }
+    case 'n':
+    case 'N':
+    {
+        cout << "The capital of France is Paris" << endl;
+        break; 
+    }
+    default:
+    {
+        cout << "Incorrect command";
+
+    }
+    }
+
+    return 0;
+}
+// Switch capital of France 
+
+#include <iostream>
+#include <exception>
+#include <string>
+
+using namespace std;
+int main()
+{
+
+
+    
+
+    cout << "Enter your full name" << endl;
+    string name;
+  // cin cannot read spaces, that is why we can use the getline code to read the input untill the next line
+    getline(cin, name);
+    
+
+    cout << "\nEnter The Marks Between 0 To 100 to check your grade:";
+
+    cout << "\nEnter The Mark: ";
+    int marks;
+
+    std::cin >> marks;
+    //Using the cin.fail function (when user enters alphabet instead of numbers)
+    if (std::cin.fail())
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Incorrect command\n: ";
+    }
+
+    else if (marks > 100)
+
+    {
+
+        /* Marks greater than 100 */
+
+        cout << "\nKindly input your Marks Between Limit\n";
+    }
+
+    else
+
+    {
+
+        switch (marks / 10)
+// Switch grade
