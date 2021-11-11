@@ -1,0 +1,108 @@
+#include <iostream>
+    using namespace std;
+    
+    int main()
+    {
+        string name,y,loc;
+        
+        int location;
+        
+        cout<<"Enter Your Name: \n";
+        cin>> name;
+        
+         cout<<"How old are you? \n";
+         cin>> y;
+         
+         cout<<"enter your location? \n";
+         cin>> loc;
+         
+        
+         
+        if  (location>=0){
+           cout <<" Do you want to avail the transporation? (Y or N) \n\n";
+           
+          
+       }
+        
+         
+      
+       
+       else if  (location>= 1){
+           cout << "Abu dhabi, transportation charges are AED 1000\n\n" ;
+
+       }
+       
+       else if (location >=2 ){
+           cout << "Sharjah, transportation charges are AED 500\n\n";
+        
+       }
+       
+       else if (location >= 3){
+              cout << "Ajman, transportation charges are AED 390\n\n"; 
+       }
+       
+        else if (location >= 4){
+  cout << "Dubai,transportation charges are AED 650\n\n";
+       }
+       
+        else if (location >= 5){
+              cout << "Rak,transportation charges are AED 250\n\n";
+       }
+        else if (location >=  6){
+            cout << "Umm-Al-Quwain,transportation charges are AED 300\n\n";
+       }
+       
+       else if (location >= 7){
+             cout << "Fujairah,transportation charges are AED 300\n\n"; 
+       }
+       
+       else if (location >=  8){
+            cout << "Al Ain,transportation charges are AED 1000\n\n"; 
+       
+       }
+     
+      
+        else {
+            cout << "other, no!";
+        }
+       
+       switch (location){
+           case 8:
+           cout<< "Al-ain"<<endl;
+           break;
+           
+           case 7:
+            cout<<"Fujairah" <<endl;
+                break;
+           case 6:
+            cout<<"Umm-Al-Quwain" <<endl;
+                break;
+           case 5:
+           cout<<"RAK" <<endl;
+               break;
+           case 4:
+           cout<<"DUBAI"<<endl;
+               break;
+           
+           case 3:
+            cout<<"AJMAN"<<endl;
+                break;
+            
+           case 2:
+           cout<<"SHARJAH"<<endl;
+               break;
+           
+           case 1:
+           cout<<"ABU DHABI" <<endl;
+               break;
+               
+               default:
+               cout<<"Other, no!";
+
+           
+       }
+       
+      
+     
+         return 0;
+    }
