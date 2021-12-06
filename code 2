@@ -1,0 +1,58 @@
+#include<iostream>
+#include "Summative code 2.h"
+using namespace std;
+int main() {
+	string name;
+	int x;
+	cout << "entrer full name:" << endl;
+	cin >> name;
+	cout << "enter the number" << endl;
+	cin >> x;
+
+	int i = x - 1;
+
+	do {
+		x = x * i;
+		i-i;
+	} while (i > 0);
+
+	cout << "factorial is: " << x << endl;
+	return 0;
+
+}
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+void main()
+{
+    int value, numb, result;
+    cout << "Enter a value:" << endl;
+    cin >> value;
+    numb = 1;
+    while (numb <= 10)
+    {
+        result = value * numb;
+        cout << value << " * " << numb << " = " << result << endl;
+        numb++;
+
+    }
+    system("pause");
+
+}
+include <iostream>
+#include <string>
+using namespace std;
+int power(int baseNum, int powNum){
+	int result = 1;
+	for (int i = 0; i < powNum; i++){
+		result = result * baseNum;
+	}
+	return result;
+}
+
+int main(){
+	cout << "power(2, 3)";
+
+	return 0;
+}
